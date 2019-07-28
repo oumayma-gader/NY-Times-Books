@@ -1,0 +1,14 @@
+<ol class="arrows">
+    <li><a routerLink="">Categories</a></li>
+    <li><a>{{ books[0].display_name }}</a></li>
+ </ol>
+<mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile  *ngFor="let book of books">
+        <mat-card style="max-width: 400px;">
+            <mat-card-title>{{ book.book_details[0].title }}</mat-card-title>
+            <mat-card-subtitle>{{ book.book_details[0].contributor }}</mat-card-subtitle>
+            <mat-card-content>{{ book.book_details[0].description }}</mat-card-content>
+            Published by:<span style="font-weight:bold"> {{ book.book_details[0].publisher }}</span>
+        </mat-card>
+    </mat-grid-tile>   
+</mat-grid-list>

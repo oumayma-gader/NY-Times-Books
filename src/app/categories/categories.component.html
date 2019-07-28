@@ -1,0 +1,15 @@
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let result of results">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                    {{result.display_name}}
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ul>
+            <li>Oldest published date: {{result.oldest_published_date}}</li>
+            <li>Newest published date: {{result.newest_published_date}}</li>
+            <li>Updated: {{result.updated}}</li>
+        </ul>
+        <a mat-raised-button routerLink="/best-seller/{{result.list_name_encoded}}">View best sellers</a>
+    </mat-expansion-panel>
+</mat-accordion>

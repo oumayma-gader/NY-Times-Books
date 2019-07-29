@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { BooksService } from '../services/books.service';
-import { Book } from '../models/book';
 import { map } from 'rxjs/operators';
 import { MatTableDataSource, MatSort, MatPaginator } from '@angular/material';
+import { Book } from '../../models/book';
+import { BooksService } from '../../services/books.service';
 
 
 @Component({

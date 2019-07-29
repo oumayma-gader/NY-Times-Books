@@ -7,11 +7,11 @@ import { AppComponent } from './app.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule, MatExpansionModule, MatGridListModule, MatButtonModule, MatCardModule, MatPaginatorModule} from '@angular/material';
-import { CategoriesComponent } from './categories/categories.component';
 import { BooksService } from './services/books.service';
 import { HttpClientModule } from '@angular/common/http';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { BestssellersComponent } from './bests-sellers/bestssellers.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { BestssellersComponent } from './components/bests-sellers/bestssellers.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 @NgModule({
